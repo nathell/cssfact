@@ -1,0 +1,6 @@
+{:paths ["src"]
+ :deps  {cheshire/cheshire                   {:mvn/version "5.12.0"}
+         net.mikera/vectorz-clj              {:mvn/version "0.48.0"}
+         net.sourceforge.cssparser/cssparser {:mvn/version "0.9.30"}
+         org.clojure/tools.cli               {:mvn/version "1.0.219"}}
+ :aliases {:run {:main-opts ["-m" "cssfact.core"]}}}
