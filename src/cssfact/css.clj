@@ -14,7 +14,7 @@
     (.parseStyleSheet parser input-source nil nil)))
 
 (defn style-rule->edn [rule]
-  {:selectors (str/split (.getSelectorText rule) #",\W*")
+  {:selectors (str/split (.getSelectorText rule) #",\s*")
    :declarations (mapv str (.getProperties (.getStyle rule)))})
 
 (defn style-rule? [rule]
